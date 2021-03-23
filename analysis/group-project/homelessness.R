@@ -73,7 +73,7 @@ quick_save <- function(g,name,...){
 data_state_path <- "data-public/raw/2007-2019-Point-in-Time-Estimates-by-state.xlsx"
 years <- as.character(2007:2019)
 
-import_data <- function(path){
+import__state_data <- function(path){
   
   output_list <- list()
   for(i in years){
@@ -90,18 +90,51 @@ import_data <- function(path){
 } 
 
 
-ds0 <- import_data(data_state_path)
+ds0 <- import_state_data(data_state_path)
 
 ds_nc <- bind_rows(ds0)
 
 
+data_coc_path <- "data-public/raw/2007-2019-Point-in-Time-Estimates-by-CoC.xlsx"
 
 
+col_select <- c(
+  "Overall Homeless - Hispanic/Latino"
+  ,"Overall Homeless - White"
+  ,"Overall Homeless - Black or African American"
+  ,"Overall Homeless - Asian"
+  ,"Overall Homeless - American Indian or Alaska Native"
+  ,"Overall Homeless - Native Hawaiian or Other Pacific Islander"
+)
 
+
+import_coc_data <- function(path){
+  output_list <- list()
+  for(i in years){
+    ds <- readxl::read_xlsx(path, sheet = i) %>% 
+      filter(`CoC Number` == "NC-505") %>% 
+      select(`CoC Number`, contains("Overall Homeless,"), matches(col_select)) %>% 
+      rename_with(~str_remove(.,"Overall Homeless,")) %>% 
+      pivot_longer(-`CoC Number`, names_to = "year")
+    
+    output_list[[i]] <- ds
+    
+  }
+  return(output_list)
+  
+}
+
+ds0_coc <- import_coc_data(data_coc_path)
+
+ds_coc_raw <- bind_rows(ds0_coc)
 
 
 # ---- tweak-data --------------------------------------------------------------
 
+ds_coc <- ds_coc_raw %>% 
+  mutate(across(year, ~str_remove(.,"Overall Homeless -"))) %>% 
+  separate(year, into = c("race", "year"), sep = ",", fill = "left") %>% 
+  replace_na(list(race = "Total")) 
 
 # ---- table-1 -----------------------------------------------------------------
 
@@ -132,10 +165,66 @@ g1 <- ds_nc %>%
     ,plot.subtitle = element_text(hjust = 0.5)
   )
 
-g1
-
+g1 %>% quick_save("nc_total_homeless")
+ 
 
 # ---- graph-2 -----------------------------------------------------------------
+
+g2 <- ds_coc %>% 
+  mutate(across(year, as.numeric)
+         ,label = ifelse(year == max(year), value, "")) %>% 
+  filter(race == "Total") %>% 
+  ggplot(aes(x = year, y = value, group = race)) +
+  geom_point(size = 2,  color = "#D95F02") +
+  geom_line( color = "#D95F02") +
+  ggrepel::geom_text_repel(
+    aes(
+      label = label
+    )
+    ,vjust              = -1
+    ,min.segment.length = 5
+  ) +
+  scale_x_continuous(breaks = seq(2007,2019,3)) +
+  labs(
+    title     = "Total People Experiencing Homelessness in Charlotte - Mecklenburg"
+    ,subtitle = "2007 - 2019"
+    ,x        = NULL
+    ,y        = NULL
+  ) +
+  theme(
+    plot.title     = element_text(hjust = 0.5)
+    ,plot.subtitle = element_text(hjust = 0.5)
+  )
+
+
+g2 %>% quick_save("meck_total_homeless")
+  
+  
+# ---- graph-3 -----------------------------------------------------------------
+
+g3 <- ds_coc %>% 
+  mutate(across(year, as.numeric)) %>% 
+  filter(race != "Total") %>% 
+  ggplot(aes(x = year, y = value, group = race, color = race)) +
+  # geom_point(size = 2) +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2015,2019,2)) +
+  labs(
+    title     = "People Experiencing Homelessness in Charlotte - Mecklenburg by Race"
+    ,subtitle = "2007 - 2019"
+    ,x        = NULL
+    ,y        = NULL
+    ,color    = NULL
+  ) +
+  scale_color_brewer(palette = "Dark2") +
+  theme(
+    plot.title     = element_text(hjust = 0.5)
+    ,plot.subtitle = element_text(hjust = 0.5)
+    ,legend.position = "bottom"
+  ) 
+
+g3
+
 
 
 # ----- publish ----------------------------------------------------------------
