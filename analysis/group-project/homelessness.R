@@ -132,7 +132,7 @@ ds_coc_raw <- bind_rows(ds0_coc)
 # ---- tweak-data --------------------------------------------------------------
 
 ds_coc <- ds_coc_raw %>% 
-  mutate(across(year, ~str_remove(.,"Overall Homeless -"))) %>% 
+  mutate(across(year, ~str_remove(.,"Overall Homeless - "))) %>% 
   separate(year, into = c("race", "year"), sep = ",", fill = "left") %>% 
   replace_na(list(race = "Total")) 
 
@@ -202,16 +202,26 @@ g2 %>% quick_save("meck_total_homeless")
   
 # ---- graph-3 -----------------------------------------------------------------
 
+fct_levels <- c(
+  "Other"  = "Asian"
+  ,"Other" = "American Indian or Alaska Native"
+  ,"Other" = "Native Hawaiian or Other Pacific Islander"
+)
+
+
 g3 <- ds_coc %>% 
-  mutate(across(year, as.numeric)) %>% 
+  mutate(across(year, as.numeric)
+         ,across(race, as.factor)
+         ,across(race ,~fct_recode(., !!!fct_levels))
+         ,across(race, ~fct_relevel(., "Other", after = Inf))) %>% 
   filter(race != "Total") %>% 
   ggplot(aes(x = year, y = value, group = race, color = race)) +
-  # geom_point(size = 2) +
+  geom_point(size = 2) +
   geom_line() +
   scale_x_continuous(breaks = seq(2015,2019,2)) +
   labs(
     title     = "People Experiencing Homelessness in Charlotte - Mecklenburg by Race"
-    ,subtitle = "2007 - 2019"
+    ,subtitle = "2015 - 2019"
     ,x        = NULL
     ,y        = NULL
     ,color    = NULL
