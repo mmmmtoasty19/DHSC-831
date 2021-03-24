@@ -73,7 +73,7 @@ quick_save <- function(g,name,...){
 data_state_path <- "data-public/raw/2007-2019-Point-in-Time-Estimates-by-state.xlsx"
 years <- as.character(2007:2019)
 
-import__state_data <- function(path){
+import_state_data <- function(path){
   
   output_list <- list()
   for(i in years){
@@ -129,12 +129,50 @@ ds0_coc <- import_coc_data(data_coc_path)
 ds_coc_raw <- bind_rows(ds0_coc)
 
 
+
+
+col_select_sex <- c(
+  "Sheltered Total Homeless - Female"
+  ,"Sheltered Total Homeless - Male"
+  ,"Unsheltered Homeless - Female"
+  ,"Unsheltered Homeless - Male"
+)
+
+
+years_abv <- as.character(2015:2019)
+
+import_coc_sexes_data <- function(path){
+  output_list <- list()
+  for(i in years_abv){
+    ds <- readxl::read_xlsx(path, sheet = i) %>% 
+      filter(`CoC Number` == "NC-505") %>% 
+      select(`CoC Number`, matches(col_select_sex)) %>% 
+      # rename_with(~str_remove(.,"Overall Homeless,")) %>% 
+      pivot_longer(-`CoC Number`, names_to = "year")
+    
+    output_list[[i]] <- ds
+    
+  }
+  return(output_list)
+}
+
+
+ds0_sex <- import_coc_sexes_data(data_coc_path)
+
+ds_coc_sex_raw <- bind_rows(ds0_sex)
+
+
 # ---- tweak-data --------------------------------------------------------------
 
 ds_coc <- ds_coc_raw %>% 
   mutate(across(year, ~str_remove(.,"Overall Homeless - "))) %>% 
   separate(year, into = c("race", "year"), sep = ",", fill = "left") %>% 
   replace_na(list(race = "Total")) 
+
+
+ds_sex <- ds_coc_sex_raw %>% 
+  separate(year, into = c("type", "sex"), sep = "-") %>% 
+  separate(sex , into = c("sex", "year"), sep = ",")
 
 # ---- table-1 -----------------------------------------------------------------
 
@@ -159,13 +197,16 @@ g1 <- ds_nc %>%
     ,subtitle = "2007 - 2019"
     ,x        = NULL
     ,y        = NULL
+    ,caption  = "Data from United States Department of Housing and Urban Development. \n Retrieved from https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/"
   ) +
   theme(
     plot.title     = element_text(hjust = 0.5)
     ,plot.subtitle = element_text(hjust = 0.5)
   )
 
-g1 %>% quick_save("nc_total_homeless")
+g1 %>% quick_save("nc_total_homeless"
+                  # , height = 5.5, width = 7.1
+                  )
  
 
 # ---- graph-2 -----------------------------------------------------------------
@@ -190,6 +231,7 @@ g2 <- ds_coc %>%
     ,subtitle = "2007 - 2019"
     ,x        = NULL
     ,y        = NULL
+    ,caption  = "Data from United States Department of Housing and Urban Development. \n Retrieved from https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/"
   ) +
   theme(
     plot.title     = element_text(hjust = 0.5)
@@ -203,9 +245,10 @@ g2 %>% quick_save("meck_total_homeless")
 # ---- graph-3 -----------------------------------------------------------------
 
 fct_levels <- c(
-  "Other"  = "Asian"
-  ,"Other" = "American Indian or Alaska Native"
-  ,"Other" = "Native Hawaiian or Other Pacific Islander"
+  "Black"   = "Black or African American"
+  ,"Other"  = "Asian"
+  ,"Other"  = "American Indian or Alaska Native"
+  ,"Other"  = "Native Hawaiian or Other Pacific Islander"
 )
 
 
@@ -213,11 +256,22 @@ g3 <- ds_coc %>%
   mutate(across(year, as.numeric)
          ,across(race, as.factor)
          ,across(race ,~fct_recode(., !!!fct_levels))
-         ,across(race, ~fct_relevel(., "Other", after = Inf))) %>% 
+         ,across(race, ~fct_relevel(., "Other", after = Inf))
+         ,label = ifelse(
+           year == max(year) & race %in% c("White", "Black"), value, "")
+         ) %>% 
   filter(race != "Total") %>% 
   ggplot(aes(x = year, y = value, group = race, color = race)) +
   geom_point(size = 2) +
-  geom_line() +
+  geom_line(aes(linetype = race)) +
+  ggrepel::geom_text_repel(
+    aes(
+      label = label
+    )
+    ,vjust              = -1
+    ,min.segment.length = 5
+    ,show.legend = FALSE
+  ) +
   scale_x_continuous(breaks = seq(2015,2019,2)) +
   labs(
     title     = "People Experiencing Homelessness in Charlotte - Mecklenburg by Race"
@@ -225,6 +279,8 @@ g3 <- ds_coc %>%
     ,x        = NULL
     ,y        = NULL
     ,color    = NULL
+    ,linetype = NULL
+    ,caption  = "Data from United States Department of Housing and Urban Development. \n Retrieved from https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/"
   ) +
   scale_color_brewer(palette = "Dark2") +
   theme(
@@ -233,7 +289,13 @@ g3 <- ds_coc %>%
     ,legend.position = "bottom"
   ) 
 
+
 g3
+g3 %>% quick_save("coc_by_race")
+
+
+# ---- graph-4 -----------------------------------------------------------------
+
 
 
 
