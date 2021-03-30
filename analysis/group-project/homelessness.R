@@ -296,6 +296,31 @@ g3 %>% quick_save("coc_by_race")
 
 # ---- graph-4 -----------------------------------------------------------------
 
+g4 <- ds_sex %>% 
+  mutate(across(year, as.numeric)) %>% 
+  ggplot(aes(x = year, y = value, group = interaction(type,sex), color = sex)) +
+  geom_point(size = 2) +
+  geom_line(aes(linetype = type)) +
+  scale_x_continuous(breaks = seq(2015,2019,2)) +
+  labs(
+    title     = "People Experiencing Homelessness in Charlotte - Mecklenburg by Gender"
+    ,subtitle = "2015 - 2019"
+    ,x        = NULL
+    ,y        = NULL
+    ,color    = NULL
+    ,linetype = NULL
+    ,caption  = "Data from United States Department of Housing and Urban Development. \n Retrieved from https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/"
+  ) +
+  scale_color_brewer(palette = "Dark2") +
+  theme(
+    plot.title     = element_text(hjust = 0.5)
+    ,plot.subtitle = element_text(hjust = 0.5)
+    ,legend.position = "bottom"
+  ) 
+
+g4 %>% quick_save("coc_by_gender")
+
+
 
 
 
