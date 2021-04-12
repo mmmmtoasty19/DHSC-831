@@ -1,0 +1,49 @@
+ID Race,Race,ID Year,Year,ID Poverty Status,Poverty Status,Poverty Population,Poverty Population Moe,Geography,ID Geography,Slug Geography,share
+2,"Black",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",70133,2001.489695202051,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.38488724981752526
+2,"Black",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",68026,1892.1841876519318,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.3719666232871469
+2,"Black",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",66390,1953.7295104491818,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.375489935467086
+2,"Black",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",64175,1845.5741654021929,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.3699252367694445
+2,"Black",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",59533,1814.017364856246,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.3531879045319443
+2,"Black",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",55771,1879.8941459560963,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.3396983761527123
+1,"White",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",54988,1751.5921328893892,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.3006747520258965
+1,"White",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",53909,1807.6169395090321,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.2958505518145947
+1,"White",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",53345,1824.2716354753752,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.30170975459394034
+1,"White",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",52018,1663.6279632177382,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.29984839838368466
+1,"White",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",50489,1692.9654456012975,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.2995331011693235
+1,"White",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",47257,1632.6086487581767,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.2878400272874563
+9,"Hispanic",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",34556,1324.7807365749247,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.18895243927778568
+9,"Hispanic",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",34228,1414.3397753015363,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.18784196864178423
+9,"Hispanic",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",33228,1417.6515791970887,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.18793160981624238
+9,"Hispanic",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",32693,1300.051922040039,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.1991314305205326
+9,"Hispanic",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",32457,1321.5430375133456,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.18709253462915248
+9,"Hispanic",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",32160,1328.7264579287944,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.19079372801215005
+6,"Other",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",15539,1017.147481931701,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09464727308165527
+6,"Other",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",13440,945.8081200751027,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0797346923035851
+6,"Other",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",12447,912.6297168074246,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.07174849118923686
+6,"Other",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",11698,906.2565861829639,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.06396474229284457
+6,"Other",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",11136,820.8940248290276,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.06111394655822453
+6,"Other",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",10855,890.8260211736072,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0613939335667302
+4,"Asian",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",7240,615.4461796128073,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.044098478480673414
+4,"Asian",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",7227,643.0684255971522,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04287519503556618
+4,"Asian",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",7070,640.4045596339864,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.03865880731838016
+4,"Asian",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",6976,695.7787004500784,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.03828402399337054
+4,"Asian",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",6677,613.064433807736,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0384883647200558
+4,"Asian",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",6645,780.2313759392146,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.03758292847083576
+7,"Two Or More",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",5608,628.3255525601357,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.030664581533447796
+7,"Two Or More",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",5182,623.0898811568039,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.029308462804495245
+7,"Two Or More",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",4892,589.1986082807731,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.02902247877597755
+7,"Two Or More",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",4877,567.7041483026172,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.028112588698474186
+7,"Two Or More",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",4797,535.6295361534874,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.029218287468479334
+7,"Two Or More",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",4780,597.7273625993711,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.02623245910096204
+3,"Native American",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",1164,249.99799999199996,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0065833752806701016
+3,"Native American",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",1055,247.50757564163564,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.005789800073538693
+3,"Native American",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",936,234.04273114113155,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.00511805426449842
+3,"Native American",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",861,237.7645894577239,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.005244308007162957
+3,"Native American",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",830,205.7887266105702,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.004784385609951522
+3,"Native American",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",818,220.08634669147472,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.004852900171453319
+5,"Pacific Islander",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",20,148.27676824101607,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.00012181900132782711
+5,"Pacific Islander",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",0,147.87156589419075,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0
+5,"Pacific Islander",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",0,147.87156589419075,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0
+5,"Pacific Islander",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",0,142.772546380598,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0
+5,"Pacific Islander",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",0,142.772546380598,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0
+5,"Pacific Islander",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",0,142.772546380598,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0
