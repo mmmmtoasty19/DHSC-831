@@ -162,6 +162,33 @@ ds0_sex <- import_coc_sexes_data(data_coc_path)
 ds_coc_sex_raw <- bind_rows(ds0_sex)
 
 
+
+col_select_family <- c(
+  "Overall Homeless People in Families"
+)
+
+import_coc_family_data <- function(path){
+  output_list <- list()
+  for(i in years){
+    ds <- readxl::read_xlsx(path, sheet = i) %>% 
+      filter(`CoC Number` == "NC-505") %>% 
+      select(`CoC Number`, matches(col_select_family)) %>% 
+      # rename_with(~str_remove(.,"Overall Homeless,")) %>% 
+      pivot_longer(-`CoC Number`, names_to = "year")
+    
+    output_list[[i]] <- ds
+    
+  }
+  return(output_list)
+}
+
+ds0_family <- import_coc_family_data(data_coc_path)
+
+ds_family_raw<- bind_rows(ds0_family)
+
+
+
+
 # ---- tweak-data --------------------------------------------------------------
 
 ds_coc <- ds_coc_raw %>% 
@@ -173,6 +200,15 @@ ds_coc <- ds_coc_raw %>%
 ds_sex <- ds_coc_sex_raw %>% 
   separate(year, into = c("type", "sex"), sep = "-") %>% 
   separate(sex , into = c("sex", "year"), sep = ",")
+
+
+ds_family <- ds_family_raw %>% 
+  separate(year, into = c("type", "sex"), sep = "-") %>% 
+  replace_na(list(sex = "Total")) %>% 
+  filter(sex == "Total") %>% 
+  select(-sex) %>% 
+  separate(type, into = c("type", "year"), sep = ",")
+  
 
 # ---- table-1 -----------------------------------------------------------------
 
@@ -320,7 +356,31 @@ g4 <- ds_sex %>%
 
 g4 %>% quick_save("coc_by_gender")
 
+# ---- graph-5 ----------------------------------------------------------------- 
 
+g5 <- ds_family %>% 
+  mutate(across(year, as.numeric)) %>% 
+  ggplot(aes(x = year, y = value, group = type)) +
+  geom_point(size = 2, color = "#D95F02") +
+  geom_line(color = "#D95F02") +
+  scale_x_continuous(breaks = seq(2007,2019,3)) +
+  labs(
+    title     = "Families Experiencing Homelessness in Charlotte - Mecklenburg"
+    ,subtitle = "2007 - 2019"
+    ,x        = NULL
+    ,y        = NULL
+    ,color    = NULL
+    ,linetype = NULL
+    ,caption  = "Data from United States Department of Housing and Urban Development. \n Retrieved from https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/"
+  ) +
+  scale_color_brewer(palette = "Dark2") +
+  theme(
+    plot.title     = element_text(hjust = 0.5)
+    ,plot.subtitle = element_text(hjust = 0.5)
+    ,legend.position = "bottom"
+  ) 
+
+g5 %>% quick_save("overall_families")
 
 
 
