@@ -1,0 +1,157 @@
+ID Age,Age,ID Gender,Gender,ID Year,Year,ID Poverty Status,Poverty Status,Poverty Population,Poverty Population Moe,Geography,ID Geography,Slug Geography,share
+0,"Under 5 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",7321,656,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05567935505951249
+0,"Under 5 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",6894,660,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05243183633114044
+1,"5 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",1453,297,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.011050690192797658
+1,"5 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",1437,237,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01092900330836217
+2,"6 to 11 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",7906,678,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.060128531771684986
+2,"6 to 11 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",6911,611,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05256112864585314
+3,"12 to 14 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",3382,456.00000000000006,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.02572156519755105
+3,"12 to 14 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",3248,423.00000000000006,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.024702437540403847
+4,"15 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",1381,267,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.010503099212837966
+4,"15 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",1187,270,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.009027645739057687
+5,"16 & 17 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",1854,291,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01410046773396205
+5,"16 & 17 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",2464,390,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01873978020306499
+6,"18 to 24 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",8516,931.0000000000001,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.06476784424078792
+6,"18 to 24 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",11054,912.9999999999999,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.08407042628436703
+7,"25 to 34 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",6770,634,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05148876297676541
+7,"25 to 34 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",12052,901,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09166064570103054
+8,"35 to 44 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",5662,543,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04306194622960794
+8,"35 to 44 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",9788,578,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.07444195155340913
+9,"45 to 54 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",5456,604,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.041495227592501044
+9,"45 to 54 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",6699,532,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05094877742708294
+10,"55 to 64 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",4725,519,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.035935658059854735
+10,"55 to 64 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",6562,501.99999999999994,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04990683347910408
+11,"65 to 74 Years",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",1693,263,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.012875993459329962
+11,"65 to 74 Years",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",3387,407,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.02575959234893714
+12,"75 Years & Over",0,"Male",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",1235,229,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.009392706392364149
+12,"75 Years & Over",1,"Female",2018,"2018",0,"Income In The Past 12 Months Below Poverty Level",2448,264,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0186180933186295
+0,"Under 5 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",7071,685,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05184055601580657
+0,"Under 5 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",6963,685,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05104876135455538
+1,"5 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",1701,373,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01247076591470612
+1,"5 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",1452,297,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.010645239334599228
+2,"6 to 11 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",8002,702,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.058666119253073704
+2,"6 to 11 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",7214,687,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05288895079875952
+3,"12 to 14 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",3251,434.99999999999994,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.023834485590070308
+3,"12 to 14 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",3284,380,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.024076422847674837
+4,"15 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",1342,267,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.009838781809250801
+4,"15 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",1263,268,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.009259598677409659
+5,"16 & 17 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",2069,327,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.015168732908599037
+5,"16 & 17 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",2293,437.00000000000006,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.016810973687490377
+6,"18 to 24 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",9217,747,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0675738091921495
+6,"18 to 24 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",11987,916,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0878818759668326
+7,"25 to 34 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",7222,599,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.052947602255148496
+7,"25 to 34 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",13201,799,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09678223447385978
+8,"35 to 44 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",6046,499.00000000000006,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04432583816596896
+8,"35 to 44 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",9910,722,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.07265449160184459
+9,"45 to 54 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",5731,482.99999999999994,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04201643707065301
+9,"45 to 54 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",6977,603,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.051151401403236096
+10,"55 to 64 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",5013,510,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.03675246885974237
+10,"55 to 64 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",6507,488,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04770562834038373
+11,"65 to 74 Years",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",1583,263,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.011605656932968717
+11,"65 to 74 Years",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",3411,366,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.025007514717849837
+12,"75 Years & Over",0,"Male",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",1035,209,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0075880321703238295
+12,"75 Years & Over",1,"Female",2017,"2017",0,"Income In The Past 12 Months Below Poverty Level",2654,290,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01945762065704294
+0,"Under 5 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",7258,626,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0514664170637622
+0,"Under 5 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",7347,662,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.052097515316541866
+1,"5 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",1687,313,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.011962502836396641
+1,"5 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",1376,294,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.009757204447469935
+2,"6 to 11 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",8458,766,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.059975606988881325
+2,"6 to 11 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",7850,563,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.055664284093487636
+3,"12 to 14 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",3146,365,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.022308259587020648
+3,"12 to 14 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",3564,527,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.025272294077603813
+4,"15 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",1129,261,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.008005729521216247
+4,"15 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",1223,225,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.008672282732017245
+5,"16 & 17 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",2242,304,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01589800317676424
+5,"16 & 17 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",2149,347,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.015238540957567506
+6,"18 to 24 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",9514,743,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.06746369412298615
+6,"18 to 24 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",12812,825,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09084978443385523
+7,"25 to 34 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",8129,633,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05764267075107783
+7,"25 to 34 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",13345,911,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09462928295892897
+8,"35 to 44 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",6500,611,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04609144542772861
+8,"35 to 44 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",10346,797,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.07336339913773542
+9,"45 to 54 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",5868,572,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04160993873383254
+9,"45 to 54 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",7294,632,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.051721692761515774
+10,"55 to 64 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",4788,476,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.03395166780122532
+10,"55 to 64 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",6558,553,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04650272294077604
+11,"65 to 74 Years",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",1528,235,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.010835035171318357
+11,"65 to 74 Years",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",3203,335,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.022712446108463808
+12,"75 Years & Over",0,"Male",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",1020,189,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.007232811436351259
+12,"75 Years & Over",1,"Female",2016,"2016",0,"Income In The Past 12 Months Below Poverty Level",2690,282,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01907476741547538
+0,"Under 5 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",7862,600,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05300486765637852
+0,"Under 5 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",7897,519,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.053240834378328813
+1,"5 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",1854,333,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.012499494357024393
+1,"5 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",1156,231,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.007793643730701293
+2,"6 to 11 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",8755,747,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05902539001928185
+2,"6 to 11 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",8105,664,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05464315089734773
+3,"12 to 14 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",3781,508.99999999999994,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.025491147876973694
+3,"12 to 14 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",3400,504.00000000000006,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.022922481560886155
+4,"15 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",1264,242,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0085217696155765
+4,"15 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",1115,221.00000000000003,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.007517225570702371
+5,"16 & 17 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",2208,294,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.014886129201893127
+5,"16 & 17 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",2474,322,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.016679476288715397
+6,"18 to 24 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",10441,865.9999999999999,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.07039224411094482
+6,"18 to 24 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",14034,788,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09461591359572832
+7,"25 to 34 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",8739,687,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05891751951781886
+7,"25 to 34 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",14300,722,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0964092606825506
+8,"35 to 44 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",6894,600,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0464787023178674
+8,"35 to 44 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",10527,818,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0709720480563084
+9,"45 to 54 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",6102,567,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.041139112495449215
+9,"45 to 54 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",7849,649,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05291722287393984
+10,"55 to 64 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",4694,468.00000000000006,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.03164650836670577
+10,"55 to 64 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",6772,583,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.045656189744212074
+11,"65 to 74 Years",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",1440,250.99999999999997,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.00970834513166943
+11,"65 to 74 Years",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",2996,311,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.020198751398945565
+12,"75 Years & Over",0,"Male",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",1038,164,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.006998098782411715
+12,"75 Years & Over",1,"Female",2015,"2015",0,"Income In The Past 12 Months Below Poverty Level",2629,281,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.017724471771638148
+0,"Under 5 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",7858,611,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05309854110778504
+0,"Under 5 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",8680,754,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05865300799383738
+1,"5 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",1924,408,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.013000966288034922
+1,"5 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",1053,283,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.007115393711694788
+2,"6 to 11 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",8466,680,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05720695457094784
+2,"6 to 11 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",8177,762,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05525410672414842
+3,"12 to 14 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",3752,409,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.02535323571346519
+3,"12 to 14 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",3250,530,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.02196109170276169
+4,"15 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",1307,309,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.008831737494002933
+4,"15 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",1043,234.00000000000003,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.007047821121840137
+5,"16 & 17 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",2576,343,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01740669914655819
+5,"16 & 17 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",2585,365,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.017467514477427375
+6,"18 to 24 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",10600,874.0000000000001,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.07162694524593044
+6,"18 to 24 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",14037,896,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09485164437897411
+7,"25 to 34 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",8676,802,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05862597895789552
+7,"25 to 34 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",14304,792,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0966558325280933
+8,"35 to 44 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",7200,605,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04865226469534898
+8,"35 to 44 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",10264,722,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.06935650622681415
+9,"45 to 54 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",6161,582,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0416314726094507
+9,"45 to 54 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",8164,675,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05516626235733737
+10,"55 to 64 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",4261,423.00000000000006,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.028792680537066944
+10,"55 to 64 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",6189,482,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.041820675861043724
+11,"65 to 74 Years",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",1259,190,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.008507389062700606
+11,"65 to 74 Years",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",2868,335,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01937981877031401
+12,"75 Years & Over",0,"Male",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",841,166,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.005682854806776179
+12,"75 Years & Over",1,"Female",2014,"2014",0,"Income In The Past 12 Months Below Poverty Level",2494,294,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01685260390975005
+0,"Under 5 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",7683,643,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05350986551145347
+0,"Under 5 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",8129,722,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.056616126089106496
+1,"5 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",1630,352,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.011352476999045834
+1,"5 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",1262,267,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.008789463786991315
+2,"6 to 11 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",8221,752,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.057256879392120125
+2,"6 to 11 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",8236,724,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05736135003935061
+3,"12 to 14 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",3726,479,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.025950508772052013
+3,"12 to 14 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",3418,409,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.023805378148919424
+4,"15 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",1333,257,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.009283958183882269
+4,"15 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",1215,269,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.008462122425669134
+5,"16 & 17 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",2605,393,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.01814306906902724
+5,"16 & 17 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",2403,348,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.0167361976863234
+6,"18 to 24 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",9836,867,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.06850488574393548
+6,"18 to 24 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",14228,901,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09909389125302094
+7,"25 to 34 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",8532,653,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.059422904144698814
+7,"25 to 34 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",13757,738,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.09581351292998377
+8,"35 to 44 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",7132,712,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04967231040318705
+8,"35 to 44 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",9801,789,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.06826112090039768
+9,"45 to 54 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",6078,688,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.04233150625779177
+9,"45 to 54 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",8079,610,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.05626789059833822
+10,"55 to 64 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",3870,406,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.02695342698546465
+10,"55 to 64 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",5526,496,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.03848698643970999
+11,"65 to 74 Years",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",1302,205,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.009068052179605936
+11,"65 to 74 Years",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",2469,340,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.017195868534137525
+12,"75 Years & Over",0,"Male",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",833,181,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.005801603276199497
+12,"75 Years & Over",1,"Female",2013,"2013",0,"Income In The Past 12 Months Below Poverty Level",2277,277,"Mecklenburg County, NC","05000US37119","mecklenburg-county-nc",0.015858644249587342
