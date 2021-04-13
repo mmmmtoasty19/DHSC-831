@@ -122,7 +122,9 @@ ds0 <- bind_rows(output_list)
 # ---- tweak-data --------------------------------------------------------------
 
 ds <- ds0 %>% 
+  select(-CoC) %>% 
   janitor::clean_names() %>% 
+  relocate(year) %>% 
   mutate(
     pct_family_beds = round(
       (`total_beds_for_households_with_children`/`total_year_round_beds`) *100
@@ -138,7 +140,64 @@ ds <- ds0 %>%
         total_beds_for_households_with_children * 100
        ,2
     )
+    ,across(year, as.numeric)
   )
+
+
+
+ds_long <- ds %>% 
+  pivot_longer(-year)
+
+
+# ---- graph-1 -----------------------------------------------------------------
+
+
+g1 <- ds_long %>% 
+  filter(
+    name %in% c("total_beds_for_households_with_children", "total_year_round_beds")
+    ) %>% 
+  mutate(
+    across(
+      name, ~str_replace_all(., c(
+        "total_beds_for_households_with_children" = "Family Beds"
+        ,"total_year_round_beds" = "Total Beds"
+      ))
+    )
+  ) %>% 
+  ggplot(aes(x = year, y = value, group = name, color = name)) +
+  geom_point(size = 2) +
+  geom_line() +
+  scale_x_continuous(breaks = seq(2007,2019,3)) +
+  labs(
+    title     = "Total Beds Compared to Family Beds in Charlotte - Mecklenburg"
+    ,subtitle = "2007 - 2019"
+    ,x        = NULL
+    ,y        = NULL
+    ,color    = NULL
+    ,caption  = "Data from United States Department of Housing and Urban Development. \n Retrieved from https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/"
+  ) +
+  scale_color_brewer(palette = "Dark2") +
+  theme(
+    plot.title     = element_text(hjust = 0.5)
+    ,plot.subtitle = element_text(hjust = 0.5)
+    ,legend.position = "bottom"
+  ) 
+
+
+
+g1
+
+
+
+
+
+
+# ---- write-data --------------------------------------------------------------
+
+
+ds %>% readr::write_csv("./data-public/derived/nc-505-housing-counts.csv")
+
+
 
 
 
