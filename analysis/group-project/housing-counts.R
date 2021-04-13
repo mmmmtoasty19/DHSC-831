@@ -202,7 +202,68 @@ g1
 
 
 
+# ---- modeling ----------------------------------------------------------------
 
+
+ds_modeling <- ds %>% 
+  mutate(
+    # let us center the variable year, for easier estimation
+    # now `year` will assume meaning `year since 2006`, but I still call it `year`
+    # to to have a more succinct variable name
+    year   = year - 2007 # for easier interpretation, assume meaning of `number of years since 2007`
+    ,year2  = year^2 # quadratic term, helps model trajectories with one inflection
+    , year3 = year^3 # cubic term, helps model trajectories with two inflections
+  ) %>% 
+  select(total_beds_for_households_with_children,total_year_round_beds, year, year2, year3)
+
+model1 <- lm(total_beds_for_households_with_children ~ year + year2 + year3, data = ds_modeling)
+summary(model1) # standard model summary, notice that quadratic and cubic terms an not significant
+# however, removing them from the model is detrimental
+lm(total_beds_for_households_with_children ~ year, data = ds_modeling) %>% broom::glance()
+lm(total_beds_for_households_with_children ~ year + year2, data = ds_modeling) %>% broom::glance()
+lm(total_beds_for_households_with_children ~ year + year2 + year3, data = ds_modeling) %>% broom::glance()
+# notice that R square increases in each next, but DESCREASES in the third (penalized for model complexity)
+# basically, it means that adding one more predictor to the model (cubic term) did not deliver
+# increase in fit expected from this increase in model complexity (i.e. number of parameters)
+anova(model1, test="Chisq") # tests significance of each sequentially added predictor
+# notice that adding quadratic terms improves the model drastically, but cubic does not
+# However, I still think you need to keep the quadratic term to account for the
+# recovery inflection (2017 - 2019), it's just too small to be picked up mathematically
+
+broom::augment(model1) # gets predicted values (+ more), but not extrapolated values
+
+# build the data set with ranges of predictors you want to extrapolate to
+d_predictors <- tibble::tibble(
+  "year" = 0:16 # now we include 2020, which in not in the original data
+  ,year2 = year^2
+  ,year3 = year^3
+)
+# let's generate predictions from the model, including the extrapolated value (year == 13)
+d_predictors$predicted <- predict(model1, newdata = d_predictors)
+d_model1_results <- d_predictors %>% left_join(
+  ds_modeling %>% select(year, total_beds_for_households_with_children)
+  ,by = "year"
+)
+d_model1_results # notice we don't have observed data for year == 13
+
+d_model1_results %>% 
+  mutate(
+    year = year + 2007 # re-center back for graphing
+  ) %>% 
+  { # very handy indeed!
+    ggplot(.,aes(x=year, y = total_beds_for_households_with_children))+
+      geom_point()+
+      geom_line()+
+      geom_point(aes(y=predicted), color = 'red')+
+      geom_line(aes(y=predicted), color = 'red')+
+      geom_point(aes(y=predicted), shape = 21, size =4, color = "blue", data = . %>% filter(year==2021))+
+      geom_text(aes(y=predicted,label=round(predicted,2)),vjust=-1.5, data = . %>% filter(year==2021))+
+      scale_x_continuous(breaks = seq(2007,2020,2)) 
+  }
+# We added the predicted value, but it is only as good as the model
+# It appears that this recovery that seemingly started in 2017 is too small
+# to register with the model yet
+# This is the predicton of the "best fitted line"
 
 
 # ---- write-data --------------------------------------------------------------
