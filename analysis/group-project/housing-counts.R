@@ -114,6 +114,19 @@ for(i in years){
 
 ds0 <- bind_rows(output_list)
 
+# Manually Add Row
+
+
+
+ds1 <- ds0 %>% 
+  add_row(
+   CoC                         = "NC-505"              
+   ,`Total Units for Households with Children` = 59
+   ,`Total Beds for Households with Children`  = 539
+   ,`Total Year-Round Beds`                    = 1323
+   ,year                                       = "2020"
+  )
+
 
 
 
@@ -121,7 +134,7 @@ ds0 <- bind_rows(output_list)
 
 # ---- tweak-data --------------------------------------------------------------
 
-ds <- ds0 %>% 
+ds <- ds1 %>% 
   select(-CoC) %>% 
   janitor::clean_names() %>% 
   relocate(year) %>% 
@@ -167,10 +180,10 @@ g1 <- ds_long %>%
   ggplot(aes(x = year, y = value, group = name, color = name)) +
   geom_point(size = 2) +
   geom_line() +
-  scale_x_continuous(breaks = seq(2007,2019,3)) +
+  scale_x_continuous(breaks = seq(2007,2020,2)) +
   labs(
     title     = "Total Beds Compared to Family Beds in Charlotte - Mecklenburg"
-    ,subtitle = "2007 - 2019"
+    ,subtitle = "2007 - 2020"
     ,x        = NULL
     ,y        = NULL
     ,color    = NULL
