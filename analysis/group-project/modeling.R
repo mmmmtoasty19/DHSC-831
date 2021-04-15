@@ -91,24 +91,40 @@ fit_trends <- ds1 %>%
     # linear = TSLM(total_beds_for_households_with_children ~ trend()),
     # exponential = TSLM(log(total_beds_for_households_with_children) ~ trend()),
     piecewise = TSLM(total_beds_for_households_with_children ~ trend(knots = c(2010, 2012, 2017)))
+    # ,ets = ETS(total_beds_for_households_with_children)
+    ,arima = ARIMA(total_beds_for_households_with_children)
   )
 
-fc_trends <- fit_trends %>% forecast(h = 5)
+fc_trends <- fit_trends %>% forecast(h = 7) 
 
 
 
-ds1 %>% 
+g1 <- ds1 %>% 
   autoplot(total_beds_for_households_with_children) +
   geom_line(data = fitted(fit_trends),
-            aes(y = .fitted, colour = .model), show.legend = FALSE) +
-  autolayer(fc_trends, alpha = 0.5, level = 50, color = "#1B9E77", data = ds1, show_gap = FALSE) +
+            aes(y = .fitted, colour = .model)
+            # , show.legend = FALSE
+            ,alpha = 0.5
+            ) +
+  autolayer(fc_trends, alpha = 0.5
+            , level = 50
+            # , color = "#1B9E77"
+            , data = ds1, show_gap = FALSE
+            ) +
   scale_color_brewer(palette = "Dark2") +
-  scale_x_continuous(breaks = seq(2005, 2025, 2)) +
+  scale_x_continuous(breaks = seq(2005, 2027, 2)) +
   theme(
     legend.position = "none"
+    ,plot.title     = element_text(hjust = 0.5)
+    ,plot.subtitle = element_text(hjust = 0.5)
   ) + 
   labs(
     x = NULL
     ,y = NULL
+    ,title = "Forecasting Total Beds for Families in Charlotte - Mecklenburg"
+    ,subtitle = "Acutal beds in Black"
   )
+
+
+g1 %>% quick_save("forecasting")
 
